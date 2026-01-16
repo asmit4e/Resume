@@ -1,114 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asmit Singh - Resume</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .section-fade-in {
-      animation: fadeIn 0.8s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body class="bg-gray-100 text-gray-800">
+    <meta charset="UTF-8">
+    <title>Asmit Singh - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="max-w-3xl mx-auto p-6 sm:p-8 bg-white shadow-2xl rounded-lg my-8">
+    <style>
+        /* Page setup for A4 */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 25mm;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .header p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
+
+        .header a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Section styling */
+        .section {
+            margin-top: 14px;
+        }
+
+        .section h2 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+
+        /* Text */
+        .content {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .edu-item {
+            margin-bottom: 8px;
+        }
+
+        .edu-title {
+            font-weight: bold;
+        }
+
+        .right {
+            float: right;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 4px 0;
+        }
+
+        ul li {
+            margin-bottom: 4px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* Print friendly */
+        @media print {
+            body {
+                margin: 0;
+            }
+            .resume {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
 
     <!-- Header -->
-    <header class="text-center border-b pb-4 mb-6">
-      <h1 class="text-3xl font-bold text-gray-900">ASMIT SINGH</h1>
-      <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mt-2 text-sm text-gray-600">
-        <span>Greater Noida</span>
-        <span>800-441-3591</span>
-        <a href="mailto:asmit.singh.in@gmail.com" class="hover:text-blue-600">asmit.singh.in@gmail.com</a>
-        <a href="https://linkedin.com/in/asmit-singh-795b97287" class="hover:text-blue-600" target="_blank">LinkedIn</a>
-        <a href="https://github.com/asmit4e" class="hover:text-blue-600" target="_blank">GitHub</a>
-      </div>
-    </header>
-
-    <main>
-      <!-- Objective -->
-      <section class="mb-6">
-        <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-1 mb-2">Objective</h2>
-        <p class="text-gray-700 text-sm leading-relaxed">
-          A motivated Computer Science graduate with strong skills in Python, Java, and Data Structures.
-          Seeking a software development internship to apply problem-solving skills and grow in AI/ML.
+    <div class="header">
+        <h1>Asmit Singh</h1>
+        <p>Greater Noida, Uttar Pradesh</p>
+        <p>Phone: 8004413591</p>
+        <p>Email: asmit.singh.in@gmail.com</p>
+        <p>
+            GitHub:
+            <a href="https://github.com/asmit4e" target="_blank">https://github.com/asmit4e</a>
+            &nbsp; | &nbsp;
+            Portfolio:
+            <a href="https://asmit4e.github.io/Portfolio/" target="_blank">
+                https://asmit4e.github.io/Portfolio/
+            </a>
         </p>
-      </section>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/asmit-singh" target="_blank">
+                https://www.linkedin.com/in/asmit-singh
+            </a>
+        </p>
+    </div>
 
-      <!-- Education -->
-      <section class="mb-6">
-        <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-1 mb-2">Education</h2>
-        <div>
-          <h3 class="text-md font-bold text-gray-800">B.Tech, Computer Science & Engineering</h3>
-          <p class="text-gray-600 italic">I.T.S. Engineering College, Greater Noida (AKTU)</p>
-          <p class="text-sm text-gray-500">Graduated 2026</p>
+    <!-- Career Objective -->
+    <div class="section">
+        <h2>Career Objective</h2>
+        <div class="content">
+            Computer Science undergraduate seeking an entry-level opportunity or internship to apply foundational programming skills, gain practical experience, and grow as a software professional.
         </div>
-      </section>
+    </div>
 
-      <!-- Projects -->
-      <section class="mb-6">
-        <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-1 mb-2">Projects</h2>
-        
-        <div class="mb-3">
-          <h3 class="text-md font-bold text-gray-800">Visual Math Teacher <span class="text-gray-600 font-normal">| AI Project</span></h3>
-          <ul class="list-disc list-inside text-sm text-gray-700 leading-relaxed">
-            <li>AI-powered tool to solve handwritten/printed math problems using OCR and ML models.</li>
-            <li>Built with Python, OCR libraries, and custom AI algorithms for accurate solutions.</li>
-          </ul>
-        </div>
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
 
-        <div class="mb-3">
-          <h3 class="text-md font-bold text-gray-800">Book Library Management <span class="text-gray-600 font-normal">| Web Project</span></h3>
-          <ul class="list-disc list-inside text-sm text-gray-700 leading-relaxed">
-            <li>Developed a full-stack system for managing books, users, and borrowing records.</li>
-            <li>Features include book search, CRUD operations, and secure login authentication.</li>
-            <li>Implemented using HTML, CSS, JavaScript, and backend APIs.</li>
-          </ul>
+        <div class="content edu-item clearfix">
+            <span class="edu-title">B.Tech in Computer Science & Engineering</span>
+            <span class="right">2022 -- 2026 (Pursuing)</span><br>
+            ITS Engineering College, Greater Noida (AKTU)
         </div>
 
-        <div>
-          <h3 class="text-md font-bold text-gray-800">Quick Pharmacy Management System <span class="text-gray-600 font-normal">| Ongoing Project</span></h3>
-          <ul class="list-disc list-inside text-sm text-gray-700 leading-relaxed">
-            <li>Currently building a pharmacy management system inspired by Apollo 24/7 app.</li>
-            <li>Supports medicine browsing, prescription upload, order tracking, and billing.</li>
-            <li>Designed for both patients and pharmacists with real-time updates and secure login.</li>
-          </ul>
+        <div class="content edu-item clearfix">
+            <span class="edu-title">Intermediate (Class XII) – UP Board</span>
+            <span class="right">2022</span><br>
+            GBIC, Chitrakoot<br>
+            Percentage: 75.02%
         </div>
-      </section>
 
-      <!-- Technical Skills -->
-      <section class="mb-6">
-        <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-1 mb-2">Technical Skills</h2>
-        <div class="grid grid-cols-2 gap-4 text-sm">
-          <div><span class="font-semibold">Languages:</span> Python, Java, C++, JavaScript</div>
-          <div><span class="font-semibold">Concepts:</span> DSA, OOP, AI/ML</div>
-          <div><span class="font-semibold">Tools:</span> Git, GitHub, Web APIs</div>
-          <div><span class="font-semibold">Soft Skills:</span> Project Management, Teamwork</div>
+        <div class="content edu-item clearfix">
+            <span class="edu-title">High School (Class X) – UP Board</span>
+            <span class="right">2020</span><br>
+            CPS Residential College, Chitrakoot<br>
+            Percentage: 74.16%
         </div>
-      </section>
-      <!-- Training -->
-      <section>
-        <h2 class="text-xl font-bold border-b-2 border-blue-500 pb-1 mb-2">Training & Certifications</h2>
-        <ul class="list-disc list-inside text-sm text-gray-700">
-          <li>Data Structures & Algorithms with C++ (Completed)</li>
-          <li>C/C++ for Developers (Completed)</li>
-          <li>Artificial Intelligence & Machine Learning (Ongoing)</li>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul class="content">
+            <li><strong>Programming Languages:</strong> HTML, Python, C, JavaScript</li>
+            <li><strong>Core Concepts:</strong> Data Structures and Algorithms, Object-Oriented Programming, Basics of AI/ML</li>
+            <li><strong>Tools:</strong> Git, GitHub, VS Code, MySQL</li>
         </ul>
-      </section>
-    </main>
-  </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <h2>Projects</h2>
+        <ul class="content">
+            <li>Visual Math Teacher – AI-based academic project</li>
+            <li>Single Key – School Management System</li>
+            <li>Social Media Hub – Personal Web Utility</li>
+            <li>MediKart – Pharmacy Management System (Major Project, Ongoing)</li>
+        </ul>
+    </div>
+
+    <!-- Training & Certifications -->
+    <div class="section">
+        <h2>Training & Certifications</h2>
+        <ul class="content">
+            <li>Data Structures and Algorithms with C++</li>
+            <li>C/C++ for Developers</li>
+            <li>Artificial Intelligence and Machine Learning</li>
+        </ul>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="section">
+        <h2>Soft Skills</h2>
+        <ul class="content">
+            <li>Clear communication and teamwork</li>
+            <li>Willingness to learn and adapt</li>
+            <li>Responsible and disciplined work approach</li>
+        </ul>
+    </div>
+
+</div>
+
 </body>
 </html>
-
